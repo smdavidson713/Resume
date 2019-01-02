@@ -1,0 +1,54 @@
+body{
+	background-image: url(light-art-blue-370799.jpg);
+
+}
+h1{
+	text-align: center;
+}
+/*holds the divs and acts as a buffer*/
+#container{
+	background-image: url(stripe.jpg);
+	padding: 2%;
+	height: 400px;
+	width: 100%;
+}
+/*main is the div that holds the 3 centered divs*/
+#main{
+	background-color: white;
+	height: 400px;
+}
+/*the div all the way to the left*/
+#sidebar{
+	background-color: lightblue;
+	width: 33%;
+	height: 400px;
+	float: left;
+	text-align: center;
+}
+/*The div all the way to the right*/
+#article{
+	background-color: #BCA9F5;
+	width: 33%;
+	height: 400px;
+	float: right;
+}
+/*The center div*/
+#middle{
+	background-color: white;
+	width: 33%;
+	height: 400px;
+	display: inline-block;
+}
+/*blow are the link attributes for when the link is used, in use, or being hovered over.*/
+a:link {
+    color: purple;
+}
+a:visited {
+    color: darkblue;
+}
+a:hover {
+    color: orange;
+}
+a:active {
+    color: black;
+}

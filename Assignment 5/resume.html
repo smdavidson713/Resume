@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Resume</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet"
+				  href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="speechbubbles.css" />
+
+<script src="speechbubbles.js">
+
+/***********************************************
+* Speech Bubbles Tooltip- (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+jQuery(function($){ //on document.ready
+ 	//Apply tooltip to links with class="addspeech", plus look inside 'speechdata.txt' for the tooltip markups
+	$('a.addspeech').speechbubble({url:'speechdata.txt'})
+})
+
+</script>
+</head>
+<body onload="show5()">
+	<script src="clock.js"></script>
+	<span id="liveclock" style="position:absolute;left:0;top:0;">
+</span>
+
+
+<h1><font color="white">Work Experience</font></h1>
+<div id="container">
+	<div id="main">
+		<div id="sidebar"><h1>Sidebar</h1>
+			<a href="resume.html">Work Experience</a>
+			<br>
+			<br>
+			<a href="education.html">Educational Experience</a>
+			<br>
+			<br>
+			<a href="skills.html">Skills and Awards</a>
+			<br>
+			<br>
+			<a href="wagecalc.html">Wage Calculator</a>
+			<br>
+			<br>
+			<a class="addspeech" href="mailto:smdavidson@albany.edu" title="Wanna chat? Email me here.">Email me!</a>
+		</div>
+
+		<div id="article"><h1><a  class="addspeech" href="https://storelocations.ae.com/us/ny/albany/120-washington-ave-ext.html" title="Do you want to know more about the store? Visit their website by clicking here!">American Eagle</a></h1>
+			<script src="skills.js"></script>
+			<p>Crossgates Mall, Albany NY
+				<br>
+				July 2018-Present
+				<br>
+				<br>
+			<button onclick="duties()">Click here</button> 
+			to see my top <input type="text" id="duty"></input> skills for this job!
+			<p id="para"></p>
+		</div>
+		<div id="middle"><h1><a class="addspeech" href="https://stores.barnesandnoble.com/store/2325" title="Interested in learning about this company? Or maybe you just want to buy some books! Click here to see more!">Barnes and Noble</a></h1>
+			<p>Smithhaven Mall, Lake Grove NY
+				<br>
+				June 2017-January 2018
+				<br>
+				<br>
+				<button onclick="skills()">Click here</button> 
+				to see my top <input type="text" id="skill"></input> skills for this job!
+				<p id="input"></p>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

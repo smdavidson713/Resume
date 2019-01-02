@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Resume</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet"
+				  href="style.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="speechbubbles.css" />
+
+<script src="speechbubbles.js">
+
+/***********************************************
+* Speech Bubbles Tooltip- (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+jQuery(function($){ //on document.ready
+ 	//Apply tooltip to links with class="addspeech", plus look inside 'speechdata.txt' for the tooltip markups
+	$('a.addspeech').speechbubble({url:'speechdata.txt'})
+})
+
+</script>
+</head>
+<body onload="show5()">
+	<script src="clock.js"></script>
+	<span id="liveclock" style="position:absolute;left:0;top:0;">
+</span>
+<h1 style="color:white;">Education</h1>
+<div id="container">
+	<div id="main">
+		<div id="sidebar"><h1>Sidebar</h1>
+			<a href="resume.html">Work Experience</a>
+			<br>
+			<br>
+			<a href="education.html">Educational Experience</a>
+			<br>
+			<br>
+			<a href="skills.html">Skills and Awards</a>
+			<br>
+			<br>
+			<a href="wagecalc.html">Wage Calculator</a>
+			<br>
+			<br>
+			<a class="addspeech" href="mailto:smdavidson@albany.edu" title="Wanna chat? Email me here.">Email me!</a>
+		</div>
+		<div id="article"><h1><a class="addspeech" href="https://www.albany.edu/" title="Time to get to class! Click here to visit my University's webpage.">University at Albany</a></h1>
+			<p>Major: Informatics with a concentration in Cyber Security
+				<br>
+			Minor: Computer Science
+			<br>
+		Graduation Year: 2020
+		<br>
+		GPA: 2.9 </p>
+		</div>
+		<div id="middle"><h1><a class="addspeech" href="http://www.smithtown.k12.ny.us/schools/hse" title="Free period is over! Back to class! Visit my highschool's webpage here. ">Smithtown High School East</a></h1>
+			<p> Advanced Regents Diploma
+				<br>
+				Graduation Year: 2016
+				<br>
+			GPA: 3.6 </p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
